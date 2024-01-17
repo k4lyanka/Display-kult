@@ -1,0 +1,719 @@
+@font-face {
+    font-family: 'MaPolice';
+    src: url('./Fonts/avalon-bold.ttf') format('ttf'),
+    url('./Fonts/avalon-regular-1.ttf') format('ttf'),
+    url('./Fonts/avalon-light.otf') format('otf'),
+    url('./Fonts/avalon-medium-2.otf') format('otf'),
+    url('./Fonts/AvenirLTStd-Roman.otf') format('otf'),
+    url('./Fonts/bebas_neue/BebasNeue-Regular.ttf') format('ttf'),
+         
+   
+  }
+
+
+/* --------Style général------------------------ */
+
+
+
+  /* Style pour le corps de la page */
+
+body {
+    font-family: avalon, sans-serif;
+    color: #DEDEDE;
+    background-color: #181221;
+    cursor: none;
+  }
+
+  /* Style pour l'en-tête */
+  header {
+    background-color: #181221;
+    padding: 0px 0px;
+    cursor: none;
+  }
+  
+/* Style pour le titre */
+
+  .title {
+    font-size: 36px;
+  }
+  
+  /* Style pour les sous-titres */
+  .subtitle {
+    font-size: 24px;
+   
+  }
+  
+  /* Style pour les boutons */
+
+  .mon-bouton {
+    display: inline-block;
+    background-color: #F9D949;
+    color: #181221;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+    cursor: none;
+  }
+  
+  .mon-bouton:hover {
+    display: inline-block;
+    background-image: url(../Img-Dk/Cards/Gradiant-portrait.png);
+    color: #181221;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+    cursor: none;
+    background-size: cover;
+
+  }
+
+
+ .souligné {
+    color: #F9D949;
+        }
+  
+
+ /* Style pour les boutons bleu */
+ .mon-bouton-bleu {
+  display: inline-block;
+  background-color: #2D3952;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  margin-top: 10px;
+}
+
+
+  /* Style pour les boutons blog */
+  .mon-bouton-blog  {
+    display: inline-block;
+    background-color: #F9D949;
+    color: #181221;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    margin-top: 10px;
+    
+  }
+
+   /* Style pour les les liens */
+
+   a {
+    color: #fff;
+    text-decoration: none;
+    cursor: none;
+    
+  }
+
+/* Style pour les les H1*/
+
+  h1 {
+    font-family: "Avalon";
+    font-size: 60px;
+    
+  }
+
+  h2 {
+    font-family: "Avalon";
+    font-size: 30px;
+    text-align: center; /* centre le contenu horizontalement */
+    letter-spacing:1px;
+    color: #F9D949;
+    }
+
+
+   
+  h3 {
+    font-family: "Avenir";
+    font-size: 18px;
+    text-align: center; /* centre le contenu horizontalement */
+    margin-top: 40px; /* centre le contenu verticalement */
+    letter-spacing:4px;
+    }  
+
+  h4 {
+    font-family: "Avenir";
+    font-size: 24px;
+    text-align: center; /* centre le contenu horizontalement */
+    letter-spacing: 1px;
+  }  
+  
+  /* Style pour les textes */
+  
+  p {
+    margin-bottom: -0.7em;/* ligne spacing */
+    letter-spacing:1px;
+    line-height:2;
+    
+  }
+
+  /* ------Alerte------- */
+
+  #cookie-alert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   background-image: url(./Img-Dk/Cards/Card-paysage.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999; /* Valeur élevée pour s'assurer que l'alerte est au-dessus des autres éléments */
+}
+
+#cookie-alert p {
+    margin: 0;
+    color: #DEDEDE;
+}
+
+#cookie-alert button {
+    
+    color: #181221;
+    border: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+ /* ------Curseur------- */
+
+.cursor{
+    z-index: 9999;
+    position: absolute;
+    background: #F9D949;
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #F9D949 ,
+                0 0 60px #F9D949 ,
+                0 0 100px #F9D949;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+    }
+    
+    .cursor-large {
+      z-index: 9999;
+      position: absolute;
+      background: #F9D949;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      pointer-events: none;
+      box-shadow: 0 0 20px #F9D949,
+                  0 0 40px #F9D949,
+                  0 0 60px #F9D949,
+                  0 0 80px #F9D949,
+                  0 0 100px #F9D949;
+                  
+      animation: colors 5s infinite;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+    
+    @keyframes colors {
+      0% {
+        box-shadow: 0 0 20px #F9D949,
+                    0 0 40px #F9D949,
+                    0 0 60px #F9D949,
+                    0 0 80px #F9D949,
+                    0 0 100px #F9D949;
+                    filter: hue-rotate(0deg);
+      }
+      50% {
+        box-shadow: 0 0 20px #F9D949,
+                    0 0 40px #F9D949,
+                    0 0 60px #F9D949,
+                    0 0 80px #F9D949,
+                    0 0 100px #F9D949;
+                    filter: hue-rotate(90deg);
+      }
+      100% {
+        box-shadow: 0 0 20px #F9D949,
+                    0 0 40px #F9D949,
+                    0 0 60px #F9D949,
+                    0 0 80px #F9D949,
+                    0 0 100px #F9D949;
+                    filter: hue-rotate(180deg);
+      }
+    }
+  
+  /* ---------------------Navigation-------------------------- */ 
+  
+  .nav {
+    height: 40px;
+    width: 100%;
+    background-color: #181221;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-title a .logo-hover {
+    display: none; /* Par défaut, le logo-hover est caché */
+  }
+  
+  .nav-title a:hover .logo {
+    display: none; /* Au survol, le logo initial est caché */
+  }
+  
+  .nav-title a:hover .logo-hover {
+    display: inline-block; /* Au survol, le logo-hover est affiché */
+  }
+  
+  .nav-btn{
+    height: 40px;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: flex;
+    font-size: 18px;
+    justify-content: flex-end;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: #181221;
+   transform: scale(1.1); /* Ajustez la valeur selon vos préférences */
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+/* Liens soulignés */
+
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: #181221;
+    text-decoration: underline;
+    text-decoration-color: #F9D949;
+    color: #F9D949;
+  }
+  
+  @media (max-width: 600px) {
+  
+    .nav-title a .logo-hover {
+      display: none; /* Par défaut, le logo-hover est caché */
+    }
+    
+    .nav-title a:hover .logo {
+      display: none; /* Au survol, le logo initial est caché */
+    }
+    
+    .nav-title a:hover .logo-hover {
+      display: inline-block; /* Au survol, le logo-hover est affiché */
+    }
+
+
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 90px;
+      padding: 13px;
+    }
+
+
+
+    .nav > .nav-btn > label:hover,
+    .nav #nav-check:checked ~ .nav-btn > label {
+      background-color: #181221;
+    }
+
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #F9D949;
+    }
+
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #181221;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+
+    /* Liens soulignés */
+
+    .nav > .nav-links > a:hover {
+      background-color: #181221;
+      text-decoration: underline;
+      text-decoration-color: #F9D949;
+      color: #F9D949;
+    }
+
+    .nav-links {
+      margin-top: 30px; /* Ajustez le nombre de pixels selon vos besoins */
+    }
+
+  }
+  
+      /* ---------------------Bloc-prez-------------------------- */  
+      .full-width-image {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+
+
+      }
+/* ---------------------Icones rs top-------------------------- */ 
+
+/* -------Insta------- */ 
+
+.social-insta {
+  display: inline-block;
+  margin-right: 20px; /* Marge entre les icônes */
+}
+
+/* Style pour que les icônes soient cliquables comme des liens */
+.social-insta a {
+  text-decoration: none;
+}
+
+/* ------Hover-Insta------- */ 
+
+  /* Style pour les icônes */
+  .social-insta img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease; /* Animation de transition pour un effet fluide */
+}
+
+/* Style pour les icônes au survol */
+.social-insta:hover img {
+    transform: scale(1.5); /* Agrandir l'image au survol */
+    content: url('../Img-Dk/Icones-footer/insta-hover.png'); /* Changer la source de l'image au survol */
+}
+
+
+/* -------Linkedin------- */ 
+
+.social-linke {
+  display: inline-block;
+  margin-right: 20px; /* Marge entre les icônes */
+}
+
+/* Style pour que les icônes soient cliquables comme des liens */
+.social-linke a {
+  text-decoration: none;
+}
+
+/* ------Hover-Linkedin------- */ 
+
+  /* Style pour les icônes */
+  .social-linke img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease; /* Animation de transition pour un effet fluide */
+}
+
+/* Style pour les icônes au survol */
+.social-linke:hover img {
+    transform: scale(1.5); /* Agrandir l'image au survol */
+    content: url('../Img-Dk/Icones-footer/Linkedin-hover.png'); /* Changer la source de l'image au survol */
+}
+
+
+
+/* ---------------------Images-------------------------- */  
+.img-pub:hover {
+
+  transform: scale(1.2);
+}
+
+
+ /* ---------------------Bloc-7-Contact-------------------------- */
+
+ input[type="text"],
+ input[type="email"],
+ textarea {
+     color: #F9D949;
+ }
+
+
+ .bc {
+  margin-left: 30px;
+}
+
+
+ .centered-container {
+  text-align: center;
+  background-image: url(../Img-Dk/Contact/Illu-3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-bottom: 100px;
+}
+
+.contact-form-container {
+  width: 100%;
+}
+
+.adresse-container{
+  position: relative;
+  background-image: url(../Img-Dk/Cards/Card-paysage.png);
+  border-radius: 40px;
+  opacity: 0.8; /* Réduit l'opacité à 50% */
+  margin-left: 30px;
+}
+
+.adresse-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.8; /* Réduit l'opacité à 50% */
+}
+
+.social-icons-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+  background-image: url(../Img-Dk/Cards/Card-paysage.png);
+  border-radius: 40px;
+}
+
+.contact-form-container h2 {
+  padding-bottom: 130px;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  background-color: transparent;
+  margin-bottom: 30px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #F9D949;
+}
+
+.contact-form-container button {
+  padding: 10px 20px;
+  background-color: #F9D949;
+  color: #181221;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form-container button:hover {
+  padding: 10px 20px;
+background-image: url(../Img-Dk/Cards/Gradiant-portrait.png);
+  color: #181221;
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.contact-top {
+  text-align: left;
+  margin-top: 0px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.social-icons-container p {
+  text-align: left;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  padding-top: 5px;
+  margin-right: 20px;
+}
+
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.mail {
+  margin: auto;
+}
+
+
+.contact-bouton {
+  border-radius: 46px;
+}
+ 
+
+.social-icons .social-icon .icon-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons .social-icon .icon-image {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.social-icons .social-icon:first-child .icon-image {
+  background-image: url("../Img-Dk/Icones-footer/");
+}
+
+.social-icons .social-icon:last-child .icon-image {
+  background-image: url("../Img-Dk/Icones-footer/Icone\ Insta.png");
+}
+
+.social-icons .social-icon:first-child:hover .icon-image {
+  background-image: url("../Img-Dk/Icones-footer/Linkedin-hover.png");
+  transform: scale(1.6); /* Grossissement de 20% */
+}
+
+.social-icons .social-icon:last-child:hover .icon-image {
+  background-image: url("../Img-Dk/Icones-footer/insta-hover.png");
+  transform: scale(1.6); /* Grossissement de 20% */
+}
+
+  /* ---------------------FOOTER-------------------------- */
+
+
+
+
+  .line {
+    height: 2px;
+    background-color: #F9D949;
+  }
+
+  .yellow-link{
+    color: #FFF;
+    text-decoration: none;
+  }
+ 
+  .yellow-link:hover {
+    color: #F9D949;
+    text-decoration: none;
+  }
+
+
+  .container-logo-footer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .Logo-footer-hover {
+    display: none;
+  }
+  
+  .container-logo-footer:hover .Logo-footer {
+    display: none;
+  }
+  
+  .container-logo-footer:hover .Logo-footer-hover {
+    display: block;
+  }
+
+  /* ---------------------QUERIES-------------------------- */
+
+/* Styles pour les smartphones en orientation portrait */
+ 
+@media screen and (max-width: 480px) {
+
+  body {
+    font-family: avalon, sans-serif;
+    color: #DEDEDE;
+    background-color: #181221;
+    cursor: none;
+    padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  /* Footer */
+ 
+ .titre-footer{
+ 
+   padding-top: 40px;
+ 
+ 
+ }
+ 
+  /* Enlève footer en repsonsive*/
+ 
+  .cursor {
+    cursor: none; /* Cela rendra le curseur invisible */
+  }
+
+ }

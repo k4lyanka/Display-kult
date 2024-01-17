@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+    <!--Fav-icone -->
+    <link rel="icon" type="image/png" href="./Img-Dk/Favicone-2.png">
+
+
+	<title> Display Kult - Web Design et community management</title>
+
+  <!--Meta-Description-->
+  <meta name="description" content="Vous souhaitez développer votre présence en ligne ?
+  Découvrez nos offres clés en main pour créer votre site, et gérer vos réseaux sociaux.">
+ 
+  <!--Meta-Mots-Clefs-->
+  <meta name="keywords" content="web design, community management, création de sites web, wordpress, logo">
+
+  <!--Meta-Responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   <!--Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+  <!-- Lien vers les fichiers CSS -->
+   <link rel="stylesheet" type="text/css" href="./index.css">
+   
+   <!-- Link JS -->
+ 
+
+  <script src="./scirpt.js" defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+
+<body>
+
+<br>
+<br>
+  <!-- Barre de navigation -->
+
+  <div class="container">
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="./index.html">
+          <img src="./Img-Dk/Logo.png" alt="Logo Display kult classique" class="logo" style="height: 45px;">
+          <img src="./Img-Dk/Logo-hover.png" alt="Logo Display Kult multicolor" class="logo-hover" style="height: 45px;">
+        </a>
+      </div>
+    </div>
+    
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+
+    <div class="nav-links">
+      <a href="./Nos-service.html" >Nos services</a>
+      <a href="./Nos-creation.html" >Nos créations</a>
+      <a href="./Blog.html" >Blog</a>
+      <a href="./index.html#contact" >Contact</a>
+    </div>
+  </div>
+</div>
+
+<br>
+    
+
+   
+
+
+
+  <!--Curseur-->
+
+<div class="cursor"></div>
+	
+
+  <!--Cookie Alert-->
+
+  <div class="cookie">
+    <h1 class="title-cookie">Cookies</h1>
+    <br>
+    <p>Ce site web utilise des cookies pour améliorer votre expérience de navigation. En continuant à utiliser ce site, vous acceptez notre utilisation des cookies. Pour en savoir plus sur la façon dont nous utilisons les cookies et comment vous pouvez les gérer, veuillez consulter notre Politique de confidentialité</p>
+    <br>
+    <br>
+    <button class="mon-bouton-alert" aria-label="Bouton de validation des cookies" onclick="setCookie()">J'ai compris</button>
+
+  </div>
+
+	<!--Bloc-1-prez-->
+
+  <br>
+  <br>
+
+   <div class="container pt-5 pb-5">
+    <div class="row d-flex justify-content-center">
+    
+    <div class="text-section col-12 col-md-6">
+        
+      <h1 class="title-mobil">On ne fait pas <br>
+          Que du design, <br>
+          On casse les codes !</h1>
+
+        <p class="text-prez-index col-12">Que vous ayez besoin d'un site web professionnel,<br>
+          de contenu engagé pour vos réseaux sociaux <br> ou d'un nouveau 
+           logo percutant,<br> nous sommes à vos côtés 
+           pour <br>vous aider à conquérir le web.</p>
+     
+   
+    </div>
+
+   <div class="background-container col-12 col-md-6 d-flex justify-content-center">
+        <img src="./Img-Dk/1-Accueil/Giff-illu-accueil.gif" class="background-image img-fluid" alt="image d'illustration du texte digital création et d'une bulle qui tourne sur le dessus">
+   </div>
+  
+
+    </div>
+</div>
+
+	
+
+	<!--Bloc-2-Nos offres-->
+<div class="container bloc-p pb-5">
+  <div class="row">
+    <div><h2 class="title-mobil">Quels sont vos besoins?</h2></div>
+    <div class="dites"><h3>Dites-nous tout !</h3></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row pt-5 cards-wd">
+
+    <!-- Card-Web design -->
+    <div class="col-md-4 mb-4">
+      <a href="./Nos-service.html#card-web-design">
+        <div class="card">
+          <div class="card-img-container pt-3">
+            <img src="./Img-Dk/1-Accueil/computer-1.png" alt="Iluustration 3D d'un ordinateur portable" class="card-img">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title text-center pb-4">WEB<br>DESIGN</h4>
+            <p class="card-text text-center">Nous vous accompagnons dans la création et la gestion de votre site personnalisé, professionnel en fonction de vos envies et objectifs.</p>
+            <br>
+            <br>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card-CM -->
+    <div class="col-md-4 mb-4">
+      <a href="./Nos-service.html#card-cm">
+        <div class="card">
+          <div class="card-img-container">
+            <img src="./Img-Dk/1-Accueil/cellphone.png" alt="Représentation en 3D d'un smartphone" class="card-img">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title text-center pb-4">COMMUNITY<br> MANAGEMENT</h4>
+            <p class="card-text text-center">Booster votre présence en ligne ! Création de posts pour vos réseaux sociaux, référencement naturel, stratégie de contenu, acquisitions de followers... On s’occupe de tout</p>
+            <br>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card support de com -->
+    <div class="col-md-4 mb-4">
+      <a href="./Nos-service.html#card-com">
+        <div class="card">
+          <div class="card-img-container">
+            <img src="./Img-Dk/1-Accueil/computer-3.png" alt="Représentation en 3D d'un ordinateur de bureau" class="card-img">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title text-center pb-4">SUPPORTS DE COMMUNICATION</h4>
+            <p class="card-text text-center">Flyers, bannières, plaquettes, nous sommes également présents pour vous créer tout types de support de communication web ou print.</p>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!--Bloc-3-Notre grain de follie-->
+
+<div class="container pt-5 pb-5">
+  <div class="row">
+
+     <div><h2 class="title-mobil pb-5">Notre grain de follie</h2></div> 
+     
+  </div>
+</div>
+
+<div class="conatiner-fluid back-follie">
+<div class="container">
+  <div class="row align-items-center">
+    
+    <div class="col-md-6">
+      <img src="./Img-Dk/1-Accueil/Portfolio-img.png" class="img-fluid portfolio" alt="Collage de certaines images du portfolio">
+    </div>
+
+    <div class="col-md-6 d-flex flex-column justify-content-end align-items-end">
+        
+      <h1 class="text-right text-follie pb-5">Découvrez notre univers <br> 
+          au travers de nos <br> projets réalisés</h1>
+
+          <p class="gdf pb-5">Notre grain de follie représente notre audace,<br>
+             notre esprit libre et notre passion <br> pour sortir des sentiers battus.<br><br>
+          C'est cette touche d'originalité qui colore nos projets,<br>et nous pousse à explorer et innover pour vos projets. 
+          </p>
+
+        <div class="position-bouton">
+
+
+        <a href="./Nos-creation.html" class="mon-bouton">C'est parti!</a>
+
+
+      </div>
+
+    </div>
+  
+  </div>
+</div>
+</div>
+
+
+
+<!-- Bloc-4-Nos valeurs-->
+
+
+
+
+<div class="container pt-5 pb-5">
+  <div class="row">
+
+     <div><h2 class=" title-mobil pb-5">Nos valeurs</h2></div> 
+     
+  </div>
+</div>
+
+
+<div class="container text-center">
+  <div class="row d-flex justify-content-between pt-5 pb-5">
+    
+    <div class="col col-12 col-md-3 valeurs">
+     
+      <h4 class="pt-5">Créativité</h4>
+      <img src="./Img-Dk/1-Accueil/creative-2.png" class="img-fluid d-block img-valeurs pt-3" alt="Illustration d'un pot de crayon en 3D pour représenter la notion de créativité">
+      <p class="valeurs-p">Nous aimons sortir des sentiers battus pour créer des designs uniques qui vous ressembles et se démarquent de la concurrence.</p>
+    
+    </div>
+
+    <div class="col col-12  col-md-3 valeurs">
+     
+      <h4 class="pt-5">Ecoute</h4>
+      <img src="./Img-Dk/1-Accueil/casque.png" class="img-fluid d-block img-valeurs pt-3" alt="Illustration d'un casque audio en 3D pour représenter la notion d'écoute">
+      <p class="valeurs-p">Nous aimons sortir des sentiers battus pour créer des designs uniques qui vous ressembles et se démarquent de la concurrence.</p>
+    
+    </div>
+    
+    <div class="col col-12  col-md-3 valeurs">
+     
+      <h4 class="pt-5 ">Conseils</h4>
+      <img src="./Img-Dk/1-Accueil/brain-1.png" class="img-fluid d-block img-valeurs pt-3" alt="Illustration d'un cerveau en 3D pour représenter la notion de conseils">
+      <p class="valeurs-p">Nous aimons sortir des sentiers battus pour créer des designs uniques qui vous ressembles et se démarquent de la concurrence.</p>
+    
+    </div>
+    
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- Bloc-5-Notre vision-->
+
+
+<div class="container-fluid photo-vision">
+  
+  <div class="container d-flex justify-content-center align-items-center parent-v col-md-6">
+  
+    <div class="text-center card-v pt-2 pb-4 ">
+      <div><h2 class="title-mobil">Notre vision:</h2></div>
+      <br> 
+      <h3 class="title-v">"Professionnalisme <br> et échange"</h3>
+      <br>
+      <br>
+      <p class="txt-v">Chez Display Kult, nous ne sommes pas avares d’informations <br> et nous croyons à l’intelligence collective.<br>
+         Nous vous considérons avant tout, comme des partenaires.<br>
+          Si vous le souhaitez, vous pourrez apprendre<br> à nos côtés afin de vous connecter<br> davantage au monde du digital.</p>
+    <br>
+    </div>
+  
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<!--Bloc-6-FAQ-->
+
+<div class="container faq pt-3 pb-5">
+  <div class="row pb-5">
+
+    <div><h2 class="pb-5 title-mobil">FAQ</h2></div>    
+
+  </div>
+</div>
+
+<div class="container">
+
+<div class="dropdown pb-4">
+  <p onclick="toggleDropdown(this)">
+    Qu’est-ce qui est utilisé pour créer mon site intertnet?
+    <img src="./Img-Dk/1-Accueil/chevron-down.png" alt="Chevron pour ouvrir la première question de la FAQ" class="icone-dropdown">
+  </p>
+  <div class="dropdown-content pb-4 pt-4">
+    <p>Chez Display Kult, nous utilisons un arsenal de technologies. Pour créer des sites vitrines élégants et éblouissants, nous mettons notre costume de Cms WordPress et nous faisons danser les plugins pour obtenir un résultat qui saura correspondre à vos attentes.<br> <br> Lorsque les choses deviennent sérieuses et que les sites prennent une tournure épique, nous nous transformons en  vaillants chevaliers HTML, CSS et JS. Nous sommes redoutables, capables de façonner des mondes web complexes, où chaque ligne de code est une aventure en soi. <br> <br> En somme, entre un peu de magie WordPress et des lignes de code qui semblent écrites en runes, nous sculptons l'Internet de demain avec style ! </p>
+  </div>
+</div>
+
+<div class="dropdown pb-4 pt-4">
+  <p onclick="toggleDropdown(this)">
+    Qui crée les contenu de votre site ?
+    <img src="./Img-Dk/1-Accueil/chevron-down.png" alt="Chevron pour ouvrir la deuxième question de la FAQ" class="icone-dropdown">
+  </p>
+  <div class="dropdown-content pb-4 pt-4">
+    <p>Pour rester frais, intéressant et attractif, un site a besoin d'être choyé avec de nouvelles informations, des clichés époustouflants et des mises à jour régulières.
+
+      Par chance, nous ne nous contentons pas seulement de jouer avec les câbles et les codes magiques. <br> <br>
+      
+      Nous avons également un flair créatif et les compétences en design graphique adéquates pour ajouter ces touches spéciales qui font briller votre site comme un joyau en ligne. <br> <br>
+      
+      De la maintenance technique aux changements glamour et tendances nous nous occupons de tout. <br> <br>
+      
+      Détendez-vous et admirez votre présence en ligne évoluée sous nos bons soins.</p>
+  </div>
+</div>
+
+<div class="dropdown pb-4 pt-4">
+  <p  onclick="toggleDropdown(this)">
+    Que comprend le référencement ?
+    <img src="./Img-Dk/1-Accueil/chevron-down.png" alt="Chevron pour ouvrir la troisième question de la FAQ" class="icone-dropdown">
+  </p>
+  <div class="dropdown-content pb-4 pt-4">
+    <p>Ah, le mystérieux et puissant référencement d'un site !<br> <br> Imaginez-le comme un guide secret pour que votre site web devienne une célébrité en ligne. <br> <br> Lorsque nous prenons en charge le référencement, nous nous lançons dans une quête épique pour que votre site soit repéré par les moteurs de recherche. <br> <br> Cela signifie ajuster les balises, les mots-clés et les contenus pour que votre site soit l'étoile du spectacle lorsqu'une personne recherche quelque chose de génial sur Google.<br> <br>
+
+      Mais attendez, il y a plus ! Le référencement ne se contente pas de gagner des applaudissements des moteurs de recherche. <br> <br> Nous optimisons également votre site pour que les visiteurs aient une expérience incroyable. <br> <br> De la vitesse de chargement fulgurante à la convivialité impeccable sur mobile, tout est pris en compte pour que vos visiteurs restent et reviennent. <br> <br>
+      
+      En un mot, le référencement, c'est comme si nous envoyions des invitations prestigieuses à tous les moteurs de recherche pour la plus grande fête en ligne de votre site. <br> <br> Et vous savez quoi ? Votre site est la vedette de l'événement, prêt à briller sous les projecteurs numériques !</p>
+  </div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<!---Bloc-6-Contact-->
+
+<h2 class="titre-contact pb-5" id="contact">Contactez-nous</h2>
+<div class="container pt-5 pb-5">
+  <div id="ancre" class="centered-container">
+  
+    
+    <div class="row">
+      <div class="col-12 col-md-5  bc offset-1 col-xs-12">
+        
+        <div class="contact-form-container">
+          
+          <form action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Nom" required title="Champ formulaire de contact ou entrer son nom">
+            <input type="email" name="email" placeholder="Adresse e-mail" required title="Champ formulaire de contact ou entrer son adresse mail">
+            <textarea name="message" placeholder="Message" required title="Champ formulaire de contact ou entrer son message"></textarea>
+            <button type="submit" class="contact-bouton">Envoyer</button>
+          </form>
+        </div>
+      </div>
+      
+
+
+      
+      <div class="col-12 col-md-5 offset-1 col-xs-12 adresse-container">
+        <div class="social-icons-container">
+          <div>
+            <div>
+            <h3 class="contact-top pb-3">Contact</h3>
+            <p class="mail">display.kult@gmail.com</p>
+          </div>
+          <div>
+            <h3 class="contact-top pb-3 pt-3">Localisation</h3>
+            <p class="mail">Lyon</p>
+          </div>
+          
+          <h3 class="contact-top pb-3 pt-3">Suivez-nous sur les réseaux sociaux :</h3>
+          
+          <div class="social-icons contact-top ">
+            <div class="social-icon">
+              <a href="https://www.linkedin.com/company/display-kult/"  class="icon-link">
+                <div class="icon-image"></div>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.instagram.com/display.kult/"  class="icon-link">
+                <div class="icon-image"></div>
+              </a>
+            </div>
+          </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Bloc-FOOTER-->
+
+
+<footer>
+  <div class="container pt-5 pb-5">
+    <div class="row justify-content-between">
+
+      <!--Col-1=Logo+text-->
+
+      
+      <div class="col-md-3 container-logo-footer">
+        
+        <a href="#nav">
+        <img src="./Img-Dk/Logo-footer.png" class="Logo-footer pb-3" alt="Logo Display Kult du footer" width="150">
+        <img src="./Img-Dk/Logo-footer-hover.png" class="Logo-footer-hover pb-3" alt="Logo Display Kult du footer au survol" width="150">
+      </a>
+        <p class="pt-4">On ne fait pas<br>
+          Que du design...<br>
+          On casse les codes !</p>
+
+      </div>
+      
+      <!--Col-2-Pages-->
+
+      <div class="col-md-2">
+        <h4 class="text-start titre-footer pb-3">Pages</h4>
+        
+        <ul class="list-unstyled">
+          <li class="pb-2"><a href="./index.html"  class="yellow-link">Accueil</a></li>
+          <li class="pb-2"><a href="./Nos-service.html"  class="yellow-link">Nos services</a></li>
+          <li class="pb-2"><a href="./Nos-creation.html"  class="yellow-link">Nos créations</a></li>
+          <li class="pb-2"><a href="./Blog.html"  class="yellow-link">Blog</a></li>
+          <li class="pb-2"><a href="./Cgv.html"  class="yellow-link">CVG</a></li>
+        </ul>
+      
+      </div>
+      
+      <!--Col-3-Services-->
+
+      <div class="col-md-3">
+        <h4 class="text-start pb-3 titre-footer">Services</h4>
+        
+        <ul class="list-unstyled">
+          <li class="pb-2"><a href="./Nos-service.html#card-web-design" class="yellow-link">Web design</a></li>
+          <li class="pb-2"><a href="./Nos-service.html#card-cm"  class="yellow-link">Community mangement</a></li>
+          <li class="pb-2"><a href="./Nos-service.html#card-com"  class="yellow-link">Supports de communication</a></li>
+        </ul>
+      
+      </div>
+      
+      <!--Col-4-Contact-->
+
+      <div class="col-md-3">
+        <h4 class="text-start pb-3 titre-footer">Contact</h4>
+        
+        <ul class="list-unstyled">
+         
+          <li><a href="mailto:display.kult@gmail.com" target="_blank" class="yellow-link">display.kult@gmail.com</a></li>
+      
+        </ul>
+      
+      </div>
+      
+        
+
+      <div class="line"></div>
+
+      </div>
+    </div>
+    
+    <!--Col-5-RS-->
+
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-md-12 text-center">
+          <h4 class="text-center">Suivez-nous</h4>
+          
+          <div class="social-icons contact-top d-flex justify-content-center">
+            <div class="social-icon">
+              <a href="https://www.linkedin.com/company/display-kult/" target="_blank" class="icon-link">
+                <div class="icon-image"></div>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.instagram.com/display.kult/" target="_blank" class="icon-link">
+                <div class="icon-image"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       
+      
+  
+</footer>
+</body>
+</html>

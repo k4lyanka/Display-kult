@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+    <!--Fav-icone -->
+    <link rel="icon" type="image/png" href="./Img-Dk/FavIcones2.png">
+
+	<title>Découvrez Nos Articles</title>
+
+    
+    <!--Meta-Description-->
+    <meta name="description" content="Explorez notre blog pour des articles informatifs et captivants sur le web design, WordPress, le community management et bien plus encore. Restez à jour avec les dernières tendances et conseils de Display Kult.">
+ 
+    <!--Meta-Mots-Clefs-->
+    <meta name="keywords" content="Blog de Display Kult, Articles captivants, Web design, Community management, création de site ">
+  
+    <!--Meta-Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   <!--Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+  <!-- Lien vers les fichiers CSS -->
+   <link rel="stylesheet" type="text/css" href="./Blog.css">
+   
+   <!-- Link JS -->
+ 
+
+  <script src="./scirpt.js" defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+
+<br>
+<br>
+      <!-- Barre de navigation -->
+    
+      <div class="container">
+      <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="./index.html">
+              <img src="./Img-Dk/Logo.png" alt="Logo classique Dsiplay Kult" class="logo" style="height: 45px;">
+              <img src="./Img-Dk/Logo-hover.png" alt="Logo multicolor Display Kult" class="logo-hover" style="height: 45px;">
+            </a>
+          </div>
+        </div>
+        
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+    
+        <div class="nav-links">
+          <a href="./Nos-service.html" >Nos services</a>
+          <a href="./Nos-creation.html">Nos créations</a>
+          <a href="./Blog.html" >Blog</a>
+          <a href="./index.html#contact" >Contact</a>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+ 
+  <!--Curseur-->
+
+<div class="cursor"></div>
+
+<!--Bloc-1-prez -->
+<br>
+<br>
+
+<div class="container pt-5 pb-5">
+  <div class="row d-flex justify-content-center">
+  
+    <div class="text-section col-12 col-md-6">
+      <h1 class="title-prez-index">Pas de fake news...<br>
+        Apprenez-en plus
+        Avec nos articles
+      </h1>
+      <p class="text-prez-index col-12">Que vous soyez à la recherche d'une source précieuse d'informations, 
+        ou d'inspiration et de connaissances dans notre domaine, vous êtes au bon endroit. Ici, nous vous aidons à rester informé, 
+        à développer vos compétences tout en restant à jour sur les dernières tendances.
+      </p>
+    </div>
+
+    <div class="background-container col-12 col-md-6 d-flex justify-content-center">
+      <img src="./Img-Dk/4-Blog/Gif-Illu-p4.gif" class="background-image img-fluid" alt="Illustration du mot: communication sous une bulle de couleur transparente qui tourne">
+    </div>
+
+  </div>
+</div>
+
+<!--Bloc-articles-TEST -->
+<div class="container">
+<div>
+  <h2 class="pb-5 text-center col-md-10 big-title">L'Importance d'avoir un Site Web<br> pour Votre Entreprise</h2></div>
+</div>
+
+<div class="container-fluid">
+  <div class="container article pt-4">
+    <div class="row">
+
+      <!--Bloc-->
+      <div class="col-md-10 detail mx-auto">
+        <div class="row">
+
+          <!-- Photo article -->
+          
+          
+          <div class="col-md-5">
+            <a href="./Articles/Article1-importance-du-site-web.html">
+            <img src="./Img-Dk/4-Blog/L'importance-d'un-site-web/realisitc-white-desk.png" alt="Photo de présentation de l'article: L'importance d'avoir un site web" class="img-fluid img-article">
+            </a>
+          </div>
+          
+          
+          <!-- Texte article-->
+
+          <div class="col-md-5">
+            <p>Dans le monde numérique d'aujourd'hui, avoir une présence en ligne solide est essentiel
+               Dans cet article, nous allons examiner les données chiffrées qui illustrent l'importance incontestable
+                d'avoir un site web pour votre entreprise...</p>
+
+          <!--Liens lecture d'article-->
+
+          <div class="col-md-12 pt-4">
+            <p>Publié le 01/09/23</p>
+          </div>
+
+          <div class="icon-container col-md-12 pt-4">
+            <img class="icon" src="./Img-Dk/3-Nos-creations/Chevron-droit.png" alt="Icône chevron permettant la lecture de l'article au clique.">
+            <a href="./Articles/Article1-importance-du-site-web.html" class="lire">Lire l'article</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!--Bloc-6-Contact-->
+
+<h2 class="titre-contact pb-5" id="contact">Contactez-nous</h2>
+<div class="container pt-5 pb-5">
+  <div id="ancre" class="centered-container">
+  
+    
+    <div class="row">
+      <div class="col-12 col-md-5 offset-1">
+        
+        <div class="contact-form-container">
+          
+          <form action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Adresse e-mail" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="contact-bouton">Envoyer</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-5 offset-1 adresse-container">
+        <div class="social-icons-container">
+          <div>
+            <div>
+            <h3 class="contact-top pb-3">Contact</h3>
+            <p class="mail">display.kult@gmail.com</p>
+          </div>
+          <div>
+            <h3 class="contact-top pb-3 pt-3">Localisation</h3>
+            <p class="mail">Lyon</p>
+          </div>
+          
+          <h3 class="contact-top pb-3 pt-3">Suivez-nous sur les réseaux sociaux :</h3>
+          
+          <div class="social-icons contact-top ">
+            <div class="social-icon">
+              <a href="https://www.linkedin.com/company/display-kult/"  class="icon-link">
+                <div class="icon-image"></div>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.instagram.com/display.kult/"  class="icon-link">
+                <div class="icon-image"></div>
+              </a>
+            </div>
+          </div>
+
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Bloc-FOOTER-->
+
+
+<footer>
+  <div class="container pt-5 pb-5">
+    <div class="row justify-content-between">
+
+      <!--Col-1=Logo+text-->
+
+      
+      <div class="col-md-3 container-logo-footer">
+        
+        <a href="#nav">
+        <img src="./Img-Dk/Logo-footer.png" class="Logo-footer pb-3" alt="Logo Display Kult du footer" width="150">
+        <img src="./Img-Dk/Logo-footer-hover.png" class="Logo-footer-hover pb-3" alt="Logo Display Kult du footer au survol" width="150">
+      </a>
+        <p class="pt-4">On ne fait pas<br>
+          Que du design...<br>
+          On casse les codes !</p>
+
+      </div>
+      
+      <!--Col-2-Pages-->
+
+      <div class="col-md-2">
+        <h4 class="text-start titre-footer pb-3">Pages</h4>
+        
+        <ul class="list-unstyled">
+          <li class="pb-2"><a href="./index.html"  class="yellow-link">Accueil</a></li>
+          <li class="pb-2"><a href="./Nos-service.html"  class="yellow-link">Nos services</a></li>
+          <li class="pb-2"><a href="./Nos-creation.html"  class="yellow-link">Nos créations</a></li>
+          <li class="pb-2"><a href="./Blog.html"  class="yellow-link">Blog</a></li>
+          <li class="pb-2"><a href="./Cgv.html"  class="yellow-link">CVG</a></li>
+        </ul>
+      
+      </div>
+      
+      <!--ol-3-Services-->
+
+      <div class="col-md-3">
+        <h4 class="text-start pb-3 titre-footer">Services</h4>
+        
+        <ul class="list-unstyled">
+          <li class="pb-2"><a href="./Nos-service.html#card-web-design" class="yellow-link">Web design</a></li>
+          <li class="pb-2"><a href="./Nos-service.html#card-cm"  class="yellow-link">Community mangement</a></li>
+          <li class="pb-2"><a href="./Nos-service.html#card-com"  class="yellow-link">Supports de communication</a></li>
+        </ul>
+      
+      </div>
+      
+      <!--Col-4-Contact-->
+
+      <div class="col-md-3">
+        <h4 class="text-start pb-3 titre-footer">Contact</h4>
+        
+        <ul class="list-unstyled">
+         
+          <li><a href="mailto:display.kult@gmail.com" target="_blank" class="yellow-link">display.kult@gmail.com</a></li>
+      
+        </ul>
+      
+      </div>
+      
+        
+
+      <div class="line"></div>
+
+      </div>
+    </div>
+    
+    <!--Col-5-RS-->
+
+    <div class="container">
+    <div class="row pt-4">
+      <div class="col-md-12 text-center">
+        <h4 class="text-center">Suivez-nous</h4>
+        
+        <div class="social-icons contact-top d-flex justify-content-center">
+          <div class="social-icon">
+            <a href="https://www.linkedin.com/company/display-kult/" target="_blank" class="icon-link">
+              <div class="icon-image"></div>
+            </a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.instagram.com/display.kult/" target="_blank" class="icon-link">
+              <div class="icon-image"></div>
+            </a>
+          </div>
+        </div>
+       
+      
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
